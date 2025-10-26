@@ -26,11 +26,11 @@ func main() {
 	router.Use(middleware.Authentication())
 
 	routes.FoodRoutes(router)
-	// routes.MenuRoutes(router)
+	routes.MenuRoutes(router)
 	// routes.TableRoutes(router)
-	// routes.OrderRoutes(router)
+	routes.OrderRoutes(router)
 	// routes.OrderItemsRoutes(router)
-	// routes.InvoiceRoutes(router)
+	routes.InvoiceRoutes(router)
 
 	router.Run(":" + port)
 
